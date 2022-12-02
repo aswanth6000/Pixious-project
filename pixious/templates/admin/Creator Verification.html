@@ -9,21 +9,25 @@
 <table width="200" border="1">
   <tr>
     <th scope="row">Serial No</th>
-    <th>Name</th>
-    <th>Profile Picture</th>
-    <th>Email</th>
-    <th>Phone No</th>
+    <th> User Name</th>
+    <th> Email</th>
+    <th>Date</th>
+    <th> Status</th>
     <th colspan="2">Decision</th>
   </tr>
+
+    {% for i in data %}
   <tr>
-    <td scope="row">&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+
+    <td>&nbsp;{{ loop.index }}</td>
+    <td>&nbsp;&nbsp;{{ i.user_id }}</td>
+    <td>  {{ i.email }}</td>
+    <td>{{ i.date }}</td>
+    <td> {{ i.status }}</td>
     <td><a href="#">Approve</a></td>
     <td><a href="#">Reject</a></td>
   </tr>
+     {% endfor %}
 </table>
 </body>
 </html>

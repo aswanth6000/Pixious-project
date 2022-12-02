@@ -6,21 +6,29 @@
 </head>
 
 <body>
+<form action="GET">
 <table width="200" border="1">
   <tr>
     <th scope="col">Serial No</th>
-    <th scope="col">User Info</th>
-    <th scope="col">Film Info</th>
+    <th scope="col">User Name</th>
+    <th scope="col">Reported Movie Id</th>
     <th scope="col">Date</th>
     <th scope="col">Action</th>
   </tr>
+    {% for i in data %}
   <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td><a href="#">Delete</a></td>
+    <td>{{ loop.index }}&nbsp;</td>
+    <td>{{i.user_name  }}</td>
+    <td>{{ i.reported_movie_id }}&nbsp;</td>
+    <td>{{ i.date }}&nbsp;</td>
+      <td><a href="/delete/{{ i.film_report_id }}">delete</a> </td>
+
+
+
+{#    <td><a href="#">Report</a></td>#}
   </tr>
+{% endfor %}
 </table>
+</form>
 </body>
 </html>
