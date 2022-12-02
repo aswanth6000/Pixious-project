@@ -11,19 +11,21 @@
   <th scope="col"><table width="200" border="1">
     <tr>
       <th scope="col">Serial No</th>
-      <th scope="col">User Info</th>
+      <th scope="col">User Name</th>
       <th scope="col">Promo Name</th>
       <th scope="col"><p>Promo Description</p></th>
       <th colspan="2" scope="col">Action</th>
     </tr>
+      {% for i in data %}
     <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
+      <td>{{loop.index }}</td>
+      <td>&nbsp;{{ i.user_name }}</td>
+      <td>&nbsp;{{ i.promo_info }}</td>
+      <td>&nbsp;{{ i.promp_description }}</td>
       <td><a href="#">Accept</a></td>
       <td><a href="#">Reject</a></td>
     </tr>
+      {% endfor %}
   </table></th>
 </tr>
 </table>
