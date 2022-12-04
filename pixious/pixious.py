@@ -50,15 +50,15 @@ def bugs():
     res=db.select("select * from bugs,user where bugs.sender_id=user.user_id")
     return render_template('admin/Bugs.html',data=res)
 
-@app.route('/bugsreply/<fid>',methods=['get','post'])
-def bugsreply(fid):
-    if request.method == 'POST':
-        r= request.form['textarea']
-        db=Db()
-        db.update("update bugs set reply='"+r+"',reply_date='curdate()' where bugs_id='"+fid+"'")
-        return '<script>alert("send successfully");window.location="/bugs"</script>'
-    else:
-        return render_template("admin/Reply.html")
+# @app.route('/bugsreply/<fid>',methods=['get','post'])
+# def bugsreply(fid):
+#     if request.method == 'POST':
+#         r= request.form['textarea']
+#         db=Db()
+#         db.update("update bugs set reply='"+r+"',reply_date='curdate()' where bugs_id='"+fid+"'")
+#         return '<script>alert("send successfully");window.location="/bugs"</script>'
+#     else:
+#         return render_template("admin/Reply.html")
 
 @app.route('/changepass',methods=['get','post'])
 def changepass():
@@ -79,24 +79,42 @@ def changepass():
             return "<script>alert('password changed sucessfully');window.location='/changepass'</script>"
     else:
         return render_template('admin/Change Password.html')
-
+#------------comment---------------------
 @app.route('/comment')
 def comment():
     db=Db()
     g=db.select("select * from comment,movie where comment.movie_id=movie.movie_id")
     return render_template('admin/Comment.html',data=g)
 
+@app.route('/comdelete/<fid>')
+def comdelete(fid):
+    db = Db()
+    db.delete("delete from comment where comment_id='"+fid+"'")
+    return '''<script>alert("deleted");window.location="/comment"</script>'''
+#------------------------creator verification------------------------------------------------------------
 @app.route('/verification')
 def verification():
 
         db = Db()
-        w= db.select("select * from user where user.user_id")
+        w= db.select("select * from user,creator where user.user_id=creator.user_id")
         return render_template('admin/Creator Verification.html',data=w)
 
+@app.route('/adm_verification/<uid>')
+def adm_verification(uid):
+    db = Db()
+    db.update("update creator set status='approved' where creator_id='"+uid+"'")
+    return '''<script>alert("Approved");window.location="/verification"</script>'''
+
+@app.route('/creator_rej/<fid>')
+def creator_rej(fid):
+    db = Db()
+    db.update("update creator set status='rejected' where creator_id='" + fid + "'")
+    return '''<script>alert("rejected");window.location="/verification"</script>'''
+#----------------------------feed back-----------------------
 @app.route('/feedback')
 def feedback():
     db=Db()
-    b=db.select("select * from feedback,user where feedback.user_id=user.user_id")
+    b=db.select("select * from feedback,user where feedback.sender_id=user.user_id")
 
     return render_template('admin/Feedback.html',data=b)
 
@@ -122,13 +140,9 @@ def delete(fid):
     db.delete("delete from film_report where film_report_id='"+fid+"'")
     return '''<script>alert("deleted");window.location="/report"</script>'''
 
-@app.route('/comdelete/<fid>')
-def comdelete(fid):
-    db = Db()
-    db.delete("delete from comment where comment_id='"+fid+"'")
-    return '''<script>alert("deleted");window.location="/comment"</script>'''
 
 
+#----------------film promo----------
 @app.route('/promo',methods=['get','post'])
 def promo():
     if request.method == 'POST':
@@ -140,15 +154,35 @@ def promo():
         db = Db()
 
     return render_template('admin/Movie Promo.html')
-
+#-------promo request---------
 @app.route('/promorequest')
 def promorequest():
+    db = Db()
+    p = db.select("select * from movie_promo_request,user where movie_promo_request.sender_id=user.user_id")
+    return render_template('admin/Promo Request.html',data=p)
 
-    return render_template('admin/Promo Request.html')
+@app.route('/promo_acc/<uid>')
+def promo_acc(uid):
+    db = Db()
+    db.update("update movie_promo_request set promo_status='approved'  where promo_request_id='"+uid+"'")
+    return '''<script>alert("Approved");window.location="/promorequest"</script>'''
+@app.route('/promo_rej/<uid>')
+def promo_rej(uid):
+    db = Db()
+    db.update("update movie_promo_request set promo_status='rejected' where promo_request_id='"+uid+"'")
+    return '''<script>alert("rejected");window.location="/promorequest"</script>'''
+
+#------------------view users------------------
 
 @app.route('/view')
 def view():
-    return render_template('admin/view user and creator.html')
+    db = Db()
+    p = db.select("select * from user,creator ")
+    return render_template('admin/view user and creator.html',data=p)
+def user_block(uid):
+    db = Db()
+    db.update("update user set user_status='blocked' where user_id='"+uid+"'")
+    return '''<script>alert("blocked");window.location="/view"</script>'''
 
 
 

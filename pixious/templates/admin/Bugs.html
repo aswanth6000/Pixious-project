@@ -11,26 +11,27 @@
 <table width="200" border="1">
   <tr>
     <th scope="col">Serial No</th>
-    <th scope="col">Sender_name</th>
+    <th scope="col">Sender name</th>
     <th scope="col">Bug Heading</th>
     <th scope="col">Bug Description </th>
     <th scope="col">Date</th>
-      <th scope="col">Reply Date</th>
-      <th scope="col">Reply</th>
-      <th scope="col">Type</th>
-
+    <th scope="col">Email</th>
+      <!--<th scope="col">Reply Date</th>-->
+      <!--<th scope="col">Reply</th>-->
+      <!--<th scope="col">Type</th>-->
   </tr>
     {% for i in data %}
   <tr>
     <td>&nbsp;{{ loop.index }}</td>
-    <td>{{ i.sender_name }}</td>
+    <td>{{ i.name }}</td>
     <td>{{ i.bug_heading }}</td>
-    <td>{{ i.bug_description }}&nbsp;</td>
+    <td>{{ i.bug_discription }}&nbsp;</td>
     <td>{{ i.date }}&nbsp;</td>
-    {#  <td><a href="">reply</a>&nbsp;</td>#}
-     <td>{{ i.reply }}&nbsp;</td>
-   <td>{{ i.type }}&nbsp;</td>
-  <td><a href="/bugsreply/{{ i.bugs_id }}">Send_Reply</a> </td>
+    <td>{{ i.email }}</td>
+ <!--<td><a href="">reply</a>&nbsp;</td>-->
+     <!--<td>{{ i.reply }}&nbsp;</td>-->
+   <!--<td>{{ i.type }}&nbsp;</td>-->
+  <!--<td><a href="/bugsreply/{{ i.bugs_id }}">Send_Reply</a> </td>-->
 
   </tr>
     {% endfor %}

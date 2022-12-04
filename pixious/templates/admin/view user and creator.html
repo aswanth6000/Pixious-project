@@ -27,18 +27,26 @@
     <th scope="col">Profile Picture</th>
     <th scope="col">Email</th>
     <th scope="col">Phone No</th>
+    <th scope="col">creator status</th>
+    <th scope="col">user status</th>
     <th scope="col">Action</th>
   </tr>
+  {% for i in data %}
   <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td><a href="#">Block</a></td>
-  </tr>
+    <td>{{loop.index}}</td>
+    <td>{{i.name}}</td>
+    <td>{{i.photo}}</td>
+    <td>{{i.email}}</td>
+    <td>{{i.phone}}</td>
+     <td>{{i.status}}</td>
+     <td>{{i.user_status}}</td>
+
+        <td><a href="/user_block/{{ i.user_id }}"> block</a>
+    </tr>
+    {% endfor %}
 </table>
 
 </form>
 </body>
+
 </html>

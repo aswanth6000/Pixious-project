@@ -24,10 +24,16 @@
     <td>  {{ i.email }}</td>
     <td>{{ i.date }}</td>
     <td> {{ i.status }}</td>
-    <td><a href="#">Approve</a></td>
-    <td><a href="#">Reject</a></td>
+    {% if i.status=='pending' %}
+        <td><a href="/adm_verification/{{ i.creator_id }}">Approve</a>
+        <td><a href="/creator_rej/{{ i.creator_id}}">Reject</a>
+  {% else %}
+    <td>{{ i.status }}</td>
+  {% endif %}
+
+
   </tr>
-     {% endfor %}
+    {% endfor %}
 </table>
 </body>
 </html>

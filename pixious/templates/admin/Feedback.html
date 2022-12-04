@@ -17,7 +17,7 @@
     {% for i in data %}
   <tr>
     <td>{{ loop.index }}</td>
-    <td>{{ i.user_name }}</td>
+    <td>{{ i.name }}</td>
     <td>{{ i.feedback }}</td>
   <td><a href="/reply/{{ i.feedback_id }}">Reply</a> </td>
   </tr>
