@@ -10,84 +10,60 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/pixious$pixious.coverage" NAME="pixious Coverage Results" MODIFIED="1669971561719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pixious$pixious.coverage" NAME="pixious Coverage Results" MODIFIED="1670393775998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pixious.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pixious.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pixious.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+            <state relative-caret-position="140">
+              <caret line="202" column="36" lean-forward="false" selection-start-line="202" selection-start-column="36" selection-end-line="202" selection-end-column="36" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
-                <marker date="1669971247866" expanded="true" signature="324:360" ph="select * fro... login" />
-                <marker date="1669971247866" expanded="true" signature="324:369" ph="select * fro... login" />
-                <marker date="1669971247866" expanded="true" signature="324:382" ph="select * fro... login" />
-                <marker date="1669971247866" expanded="true" signature="324:383" ph="select * fro... login" />
-                <marker date="1669971247866" expanded="true" signature="324:416" ph="select * fro... login" />
-                <marker date="1669971247866" expanded="true" signature="324:418" ph="select * fro... login" />
-                <marker date="1669971247866" expanded="true" signature="809:916" ph="select * fro... movie" />
-                <marker date="1669971247866" expanded="true" signature="916:918" ph="update movie... " />
-                <marker date="1669971247866" expanded="true" signature="917:918" ph="select * fro... movie" />
-                <marker date="1669971247866" expanded="true" signature="1080:1145" ph="update movie... " />
-                <marker date="1669971247866" expanded="true" signature="1086:1145" ph="delete from " />
-                <marker date="1669971247866" expanded="true" signature="1313:1382" ph="update movie... " />
-                <marker date="1669971247866" expanded="true" signature="1375:1382" ph="delete from " />
-                <marker date="1669971247866" expanded="true" signature="1536:1593" ph="select * fro... bugs" />
-                <marker date="1669971247866" expanded="true" signature="1830:1906" ph="update feedb... " />
-                <marker date="1669971247866" expanded="true" signature="2333:2402" ph="select * fro... login" />
-                <marker date="1669971247866" expanded="true" signature="2511:2532" ph="update login... " />
-                <marker date="1669971247866" expanded="true" signature="2511:2538" ph="update login... " />
-                <marker date="1669971247866" expanded="true" signature="2511:2550" ph="update login... " />
-                <marker date="1669971247866" expanded="true" signature="2511:2565" ph="update login... " />
-                <marker date="1669971247866" expanded="true" signature="2511:2573" ph="update login... " />
-                <marker date="1669971247866" expanded="true" signature="2511:2575" ph="update login... " />
-                <marker date="1669971247866" expanded="true" signature="3063:3084" ph="select * fro... comment" />
-                <marker date="1669971247866" expanded="true" signature="3063:3090" ph="select * fro... comment" />
-                <marker date="1669971247866" expanded="true" signature="3063:3128" ph="select * fro... comment" />
-                <marker date="1669971247866" expanded="true" signature="3277:3314" ph="select * fro... user" />
-                <marker date="1669971247866" expanded="true" signature="3277:3316" ph="select * fro... user" />
-                <marker date="1669971247866" expanded="true" signature="3460:3523" ph="select * fro... feedback" />
-                <marker date="1669971247866" expanded="true" signature="3755:3782" ph="update feedb... " />
-                <marker date="1669971247866" expanded="true" signature="3755:3788" ph="update feedb... " />
-                <marker date="1669971247866" expanded="true" signature="3755:3818" ph="update feedb... " />
-                <marker date="1669971247866" expanded="true" signature="3755:3830" ph="update feedb... " />
-                <marker date="1669971247866" expanded="true" signature="3755:3831" ph="update feedb... " />
-                <marker date="1669971247866" expanded="true" signature="3755:3839" ph="update feedb... " />
-                <marker date="1669971247866" expanded="true" signature="3755:3841" ph="update feedb... " />
-                <marker date="1669971247866" expanded="true" signature="4060:4070" ph="select * fro... film_report" />
-                <marker date="1669971247866" expanded="true" signature="4060:4085" ph="select * fro... film_report" />
-                <marker date="1669971247866" expanded="true" signature="4060:4091" ph="select * fro... film_report" />
-                <marker date="1669971247866" expanded="true" signature="4060:4133" ph="select * fro... film_report" />
-                <marker date="1669971247866" expanded="true" signature="4272:4317" ph="delete from " />
-                <marker date="1669971247866" expanded="true" signature="4272:4326" ph="delete from " />
-                <marker date="1669971247866" expanded="true" signature="4272:4328" ph="delete from " />
-                <marker date="1669971247866" expanded="true" signature="4487:4533" ph="delete from " />
+                <marker date="1670393775983" expanded="true" signature="324:360" ph="select * fro... login" />
+                <marker date="1670393775983" expanded="true" signature="324:369" ph="select * fro... login" />
+                <marker date="1670393775983" expanded="true" signature="324:382" ph="select * fro... login" />
+                <marker date="1670393775983" expanded="true" signature="324:383" ph="select * fro... login" />
+                <marker date="1670393775983" expanded="true" signature="324:416" ph="select * fro... login" />
+                <marker date="1670393775983" expanded="true" signature="324:418" ph="select * fro... login" />
+                <marker date="1670393775983" expanded="true" signature="809:916" ph="select * fro... movie" />
+                <marker date="1670393775983" expanded="true" signature="916:918" ph="update movie... " />
+                <marker date="1670393775983" expanded="true" signature="917:918" ph="select * fro... movie" />
+                <marker date="1670393775983" expanded="true" signature="1080:1145" ph="update movie... " />
+                <marker date="1670393775983" expanded="true" signature="1086:1145" ph="delete from " />
+                <marker date="1670393775983" expanded="true" signature="1313:1382" ph="update movie... " />
+                <marker date="1670393775983" expanded="true" signature="1375:1382" ph="delete from " />
+                <marker date="1670393775983" expanded="true" signature="1536:1593" ph="select * fro... bugs" />
+                <marker date="1670393775983" expanded="true" signature="2351:2420" ph="select * fro... login" />
+                <marker date="1670393775983" expanded="true" signature="2529:2591" ph="update login... " />
+                <marker date="1670393775983" expanded="true" signature="3122:3187" ph="select * fro... comment" />
+                <marker date="1670393775983" expanded="true" signature="3327:3373" ph="delete from " />
+                <marker date="1670393775983" expanded="true" signature="3649:3710" ph="select * fro... user" />
+                <marker date="1670393775983" expanded="true" signature="3881:3944" ph="update creat... " />
+                <marker date="1670393775983" expanded="true" signature="4116:4183" ph="update creat... " />
+                <marker date="1670393775983" expanded="true" signature="4401:4466" ph="select * fro... feedback" />
+                <marker date="1670393775983" expanded="true" signature="4698:4782" ph="update feedb... " />
+                <marker date="1670393775983" expanded="true" signature="5003:5076" ph="select * fro... film_report" />
+                <marker date="1670393775983" expanded="true" signature="5215:5269" ph="delete from " />
+                <marker date="1670393775983" expanded="true" signature="5885:5972" ph="select * fro... movie_promo_request" />
+                <marker date="1670393775983" expanded="true" signature="6118:6206" ph="update movie... " />
+                <marker date="1670393775983" expanded="true" signature="6373:6460" ph="update movie... " />
+                <marker date="1670393775983" expanded="true" signature="6785:6896" ph="select * fro... user" />
+                <marker date="1670393775983" expanded="true" signature="7042:7103" ph="select * fro... user" />
+                <marker date="1670393775983" expanded="true" signature="7231:7292" ph="update user " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Creator Verification.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/admin/Creator Verification.html">
+      <file leaf-file-name="Add movie promo request.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/creator/Add movie promo request.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Approve movies.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/admin/Approve movies.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="39" column="3" lean-forward="true" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="16" />
-              <folding>
-                <marker date="1669968108799" expanded="false" signature="810:816" ph=" " />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -128,8 +104,8 @@
         <option value="$PROJECT_DIR$/templates/admin/admin home.html" />
         <option value="$PROJECT_DIR$/templates/admin/Bugs Reply.html" />
         <option value="$PROJECT_DIR$/templates/admin/Bugs.html" />
-        <option value="$PROJECT_DIR$/pixious.py" />
         <option value="$PROJECT_DIR$/templates/admin/Creator Verification.html" />
+        <option value="$PROJECT_DIR$/pixious.py" />
       </list>
     </option>
   </component>
@@ -160,8 +136,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -216,12 +190,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="creator" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -444,7 +420,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23801917" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23801917" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -470,12 +446,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pixious.py</url>
-          <line>131</line>
+          <line>145</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pixious.py</url>
-          <line>124</line>
+          <line>142</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
@@ -484,74 +460,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/admin/Bugs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="7" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/Feedback.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="7" lean-forward="false" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pixious.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="69" column="23" lean-forward="true" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-            <marker date="1669971247866" expanded="true" signature="324:360" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:369" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:382" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:383" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:416" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:418" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="809:916" ph="select * fro... movie" />
-            <marker date="1669971247866" expanded="true" signature="916:918" ph="update movie... " />
-            <marker date="1669971247866" expanded="true" signature="917:918" ph="select * fro... movie" />
-            <marker date="1669971247866" expanded="true" signature="1080:1145" ph="update movie... " />
-            <marker date="1669971247866" expanded="true" signature="1086:1145" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="1313:1382" ph="update movie... " />
-            <marker date="1669971247866" expanded="true" signature="1375:1382" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="1536:1593" ph="select * fro... bugs" />
-            <marker date="1669971247866" expanded="true" signature="1830:1906" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="2333:2402" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="2511:2532" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2538" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2550" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2565" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2573" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2575" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="3063:3084" ph="select * fro... comment" />
-            <marker date="1669971247866" expanded="true" signature="3063:3090" ph="select * fro... comment" />
-            <marker date="1669971247866" expanded="true" signature="3063:3128" ph="select * fro... comment" />
-            <marker date="1669971247866" expanded="true" signature="3277:3314" ph="select * fro... user" />
-            <marker date="1669971247866" expanded="true" signature="3277:3316" ph="select * fro... user" />
-            <marker date="1669971247866" expanded="true" signature="3460:3523" ph="select * fro... feedback" />
-            <marker date="1669971247866" expanded="true" signature="3755:3782" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3788" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3818" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3830" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3831" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3839" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3841" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="4060:4070" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4060:4085" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4060:4091" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4060:4133" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4272:4317" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="4272:4326" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="4272:4328" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="4487:4533" ph="delete from " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/admin/Comment.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -565,49 +473,37 @@
           <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
-            <marker date="1669971247866" expanded="true" signature="324:360" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:369" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:382" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:383" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:416" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:418" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="809:916" ph="select * fro... movie" />
-            <marker date="1669971247866" expanded="true" signature="916:918" ph="update movie... " />
-            <marker date="1669971247866" expanded="true" signature="917:918" ph="select * fro... movie" />
-            <marker date="1669971247866" expanded="true" signature="1080:1145" ph="update movie... " />
-            <marker date="1669971247866" expanded="true" signature="1086:1145" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="1313:1382" ph="update movie... " />
-            <marker date="1669971247866" expanded="true" signature="1375:1382" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="1536:1593" ph="select * fro... bugs" />
-            <marker date="1669971247866" expanded="true" signature="1830:1906" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="2333:2402" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="2511:2532" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2538" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2550" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2565" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2573" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2575" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="3063:3084" ph="select * fro... comment" />
-            <marker date="1669971247866" expanded="true" signature="3063:3090" ph="select * fro... comment" />
-            <marker date="1669971247866" expanded="true" signature="3063:3128" ph="select * fro... comment" />
-            <marker date="1669971247866" expanded="true" signature="3277:3314" ph="select * fro... user" />
-            <marker date="1669971247866" expanded="true" signature="3277:3316" ph="select * fro... user" />
-            <marker date="1669971247866" expanded="true" signature="3460:3523" ph="select * fro... feedback" />
-            <marker date="1669971247866" expanded="true" signature="3755:3782" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3788" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3818" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3830" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3831" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3839" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3841" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="4060:4070" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4060:4085" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4060:4091" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4060:4133" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4272:4317" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="4272:4326" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="4272:4328" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="4487:4533" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="324:360" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:369" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:382" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:383" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:416" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:418" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="809:916" ph="select * fro... movie" />
+            <marker date="1670393775983" expanded="true" signature="916:918" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="917:918" ph="select * fro... movie" />
+            <marker date="1670393775983" expanded="true" signature="1080:1145" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="1086:1145" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="1313:1382" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="1375:1382" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="1536:1593" ph="select * fro... bugs" />
+            <marker date="1670393775983" expanded="true" signature="2351:2420" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="2529:2591" ph="update login... " />
+            <marker date="1670393775983" expanded="true" signature="3122:3187" ph="select * fro... comment" />
+            <marker date="1670393775983" expanded="true" signature="3327:3373" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="3649:3710" ph="select * fro... user" />
+            <marker date="1670393775983" expanded="true" signature="3881:3944" ph="update creat... " />
+            <marker date="1670393775983" expanded="true" signature="4116:4183" ph="update creat... " />
+            <marker date="1670393775983" expanded="true" signature="4401:4466" ph="select * fro... feedback" />
+            <marker date="1670393775983" expanded="true" signature="4698:4782" ph="update feedb... " />
+            <marker date="1670393775983" expanded="true" signature="5003:5076" ph="select * fro... film_report" />
+            <marker date="1670393775983" expanded="true" signature="5215:5269" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="5885:5972" ph="select * fro... movie_promo_request" />
+            <marker date="1670393775983" expanded="true" signature="6118:6206" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="6373:6460" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="6785:6896" ph="select * fro... user" />
+            <marker date="1670393775983" expanded="true" signature="7042:7103" ph="select * fro... user" />
+            <marker date="1670393775983" expanded="true" signature="7231:7292" ph="update user " />
           </folding>
         </state>
       </provider>
@@ -625,49 +521,37 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
-            <marker date="1669971247866" expanded="true" signature="324:360" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:369" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:382" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:383" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:416" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:418" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="809:916" ph="select * fro... movie" />
-            <marker date="1669971247866" expanded="true" signature="916:918" ph="update movie... " />
-            <marker date="1669971247866" expanded="true" signature="917:918" ph="select * fro... movie" />
-            <marker date="1669971247866" expanded="true" signature="1080:1145" ph="update movie... " />
-            <marker date="1669971247866" expanded="true" signature="1086:1145" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="1313:1382" ph="update movie... " />
-            <marker date="1669971247866" expanded="true" signature="1375:1382" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="1536:1593" ph="select * fro... bugs" />
-            <marker date="1669971247866" expanded="true" signature="1830:1906" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="2333:2402" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="2511:2532" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2538" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2550" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2565" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2573" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2575" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="3063:3084" ph="select * fro... comment" />
-            <marker date="1669971247866" expanded="true" signature="3063:3090" ph="select * fro... comment" />
-            <marker date="1669971247866" expanded="true" signature="3063:3128" ph="select * fro... comment" />
-            <marker date="1669971247866" expanded="true" signature="3277:3314" ph="select * fro... user" />
-            <marker date="1669971247866" expanded="true" signature="3277:3316" ph="select * fro... user" />
-            <marker date="1669971247866" expanded="true" signature="3460:3523" ph="select * fro... feedback" />
-            <marker date="1669971247866" expanded="true" signature="3755:3782" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3788" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3818" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3830" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3831" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3839" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3841" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="4060:4070" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4060:4085" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4060:4091" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4060:4133" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4272:4317" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="4272:4326" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="4272:4328" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="4487:4533" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="324:360" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:369" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:382" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:383" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:416" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:418" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="809:916" ph="select * fro... movie" />
+            <marker date="1670393775983" expanded="true" signature="916:918" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="917:918" ph="select * fro... movie" />
+            <marker date="1670393775983" expanded="true" signature="1080:1145" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="1086:1145" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="1313:1382" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="1375:1382" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="1536:1593" ph="select * fro... bugs" />
+            <marker date="1670393775983" expanded="true" signature="2351:2420" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="2529:2591" ph="update login... " />
+            <marker date="1670393775983" expanded="true" signature="3122:3187" ph="select * fro... comment" />
+            <marker date="1670393775983" expanded="true" signature="3327:3373" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="3649:3710" ph="select * fro... user" />
+            <marker date="1670393775983" expanded="true" signature="3881:3944" ph="update creat... " />
+            <marker date="1670393775983" expanded="true" signature="4116:4183" ph="update creat... " />
+            <marker date="1670393775983" expanded="true" signature="4401:4466" ph="select * fro... feedback" />
+            <marker date="1670393775983" expanded="true" signature="4698:4782" ph="update feedb... " />
+            <marker date="1670393775983" expanded="true" signature="5003:5076" ph="select * fro... film_report" />
+            <marker date="1670393775983" expanded="true" signature="5215:5269" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="5885:5972" ph="select * fro... movie_promo_request" />
+            <marker date="1670393775983" expanded="true" signature="6118:6206" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="6373:6460" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="6785:6896" ph="select * fro... user" />
+            <marker date="1670393775983" expanded="true" signature="7042:7103" ph="select * fro... user" />
+            <marker date="1670393775983" expanded="true" signature="7231:7292" ph="update user " />
           </folding>
         </state>
       </provider>
@@ -713,49 +597,37 @@
           <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
-            <marker date="1669971247866" expanded="true" signature="324:360" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:369" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:382" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:383" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:416" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:418" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="809:916" ph="select * fro... movie" />
-            <marker date="1669971247866" expanded="true" signature="916:918" ph="update movie... " />
-            <marker date="1669971247866" expanded="true" signature="917:918" ph="select * fro... movie" />
-            <marker date="1669971247866" expanded="true" signature="1080:1145" ph="update movie... " />
-            <marker date="1669971247866" expanded="true" signature="1086:1145" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="1313:1382" ph="update movie... " />
-            <marker date="1669971247866" expanded="true" signature="1375:1382" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="1536:1593" ph="select * fro... bugs" />
-            <marker date="1669971247866" expanded="true" signature="1830:1906" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="2333:2402" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="2511:2532" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2538" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2550" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2565" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2573" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2575" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="3063:3084" ph="select * fro... comment" />
-            <marker date="1669971247866" expanded="true" signature="3063:3090" ph="select * fro... comment" />
-            <marker date="1669971247866" expanded="true" signature="3063:3128" ph="select * fro... comment" />
-            <marker date="1669971247866" expanded="true" signature="3277:3314" ph="select * fro... user" />
-            <marker date="1669971247866" expanded="true" signature="3277:3316" ph="select * fro... user" />
-            <marker date="1669971247866" expanded="true" signature="3460:3523" ph="select * fro... feedback" />
-            <marker date="1669971247866" expanded="true" signature="3755:3782" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3788" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3818" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3830" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3831" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3839" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3841" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="4060:4070" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4060:4085" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4060:4091" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4060:4133" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4272:4317" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="4272:4326" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="4272:4328" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="4487:4533" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="324:360" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:369" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:382" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:383" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:416" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:418" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="809:916" ph="select * fro... movie" />
+            <marker date="1670393775983" expanded="true" signature="916:918" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="917:918" ph="select * fro... movie" />
+            <marker date="1670393775983" expanded="true" signature="1080:1145" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="1086:1145" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="1313:1382" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="1375:1382" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="1536:1593" ph="select * fro... bugs" />
+            <marker date="1670393775983" expanded="true" signature="2351:2420" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="2529:2591" ph="update login... " />
+            <marker date="1670393775983" expanded="true" signature="3122:3187" ph="select * fro... comment" />
+            <marker date="1670393775983" expanded="true" signature="3327:3373" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="3649:3710" ph="select * fro... user" />
+            <marker date="1670393775983" expanded="true" signature="3881:3944" ph="update creat... " />
+            <marker date="1670393775983" expanded="true" signature="4116:4183" ph="update creat... " />
+            <marker date="1670393775983" expanded="true" signature="4401:4466" ph="select * fro... feedback" />
+            <marker date="1670393775983" expanded="true" signature="4698:4782" ph="update feedb... " />
+            <marker date="1670393775983" expanded="true" signature="5003:5076" ph="select * fro... film_report" />
+            <marker date="1670393775983" expanded="true" signature="5215:5269" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="5885:5972" ph="select * fro... movie_promo_request" />
+            <marker date="1670393775983" expanded="true" signature="6118:6206" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="6373:6460" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="6785:6896" ph="select * fro... user" />
+            <marker date="1670393775983" expanded="true" signature="7042:7103" ph="select * fro... user" />
+            <marker date="1670393775983" expanded="true" signature="7231:7292" ph="update user " />
           </folding>
         </state>
       </provider>
@@ -794,49 +666,37 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
-            <marker date="1669971247866" expanded="true" signature="324:360" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:369" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:382" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:383" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:416" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:418" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="809:916" ph="select * fro... movie" />
-            <marker date="1669971247866" expanded="true" signature="916:918" ph="update movie... " />
-            <marker date="1669971247866" expanded="true" signature="917:918" ph="select * fro... movie" />
-            <marker date="1669971247866" expanded="true" signature="1080:1145" ph="update movie... " />
-            <marker date="1669971247866" expanded="true" signature="1086:1145" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="1313:1382" ph="update movie... " />
-            <marker date="1669971247866" expanded="true" signature="1375:1382" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="1536:1593" ph="select * fro... bugs" />
-            <marker date="1669971247866" expanded="true" signature="1830:1906" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="2333:2402" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="2511:2532" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2538" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2550" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2565" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2573" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2575" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="3063:3084" ph="select * fro... comment" />
-            <marker date="1669971247866" expanded="true" signature="3063:3090" ph="select * fro... comment" />
-            <marker date="1669971247866" expanded="true" signature="3063:3128" ph="select * fro... comment" />
-            <marker date="1669971247866" expanded="true" signature="3277:3314" ph="select * fro... user" />
-            <marker date="1669971247866" expanded="true" signature="3277:3316" ph="select * fro... user" />
-            <marker date="1669971247866" expanded="true" signature="3460:3523" ph="select * fro... feedback" />
-            <marker date="1669971247866" expanded="true" signature="3755:3782" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3788" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3818" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3830" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3831" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3839" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3841" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="4060:4070" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4060:4085" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4060:4091" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4060:4133" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4272:4317" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="4272:4326" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="4272:4328" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="4487:4533" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="324:360" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:369" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:382" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:383" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:416" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:418" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="809:916" ph="select * fro... movie" />
+            <marker date="1670393775983" expanded="true" signature="916:918" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="917:918" ph="select * fro... movie" />
+            <marker date="1670393775983" expanded="true" signature="1080:1145" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="1086:1145" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="1313:1382" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="1375:1382" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="1536:1593" ph="select * fro... bugs" />
+            <marker date="1670393775983" expanded="true" signature="2351:2420" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="2529:2591" ph="update login... " />
+            <marker date="1670393775983" expanded="true" signature="3122:3187" ph="select * fro... comment" />
+            <marker date="1670393775983" expanded="true" signature="3327:3373" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="3649:3710" ph="select * fro... user" />
+            <marker date="1670393775983" expanded="true" signature="3881:3944" ph="update creat... " />
+            <marker date="1670393775983" expanded="true" signature="4116:4183" ph="update creat... " />
+            <marker date="1670393775983" expanded="true" signature="4401:4466" ph="select * fro... feedback" />
+            <marker date="1670393775983" expanded="true" signature="4698:4782" ph="update feedb... " />
+            <marker date="1670393775983" expanded="true" signature="5003:5076" ph="select * fro... film_report" />
+            <marker date="1670393775983" expanded="true" signature="5215:5269" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="5885:5972" ph="select * fro... movie_promo_request" />
+            <marker date="1670393775983" expanded="true" signature="6118:6206" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="6373:6460" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="6785:6896" ph="select * fro... user" />
+            <marker date="1670393775983" expanded="true" signature="7042:7103" ph="select * fro... user" />
+            <marker date="1670393775983" expanded="true" signature="7231:7292" ph="update user " />
           </folding>
         </state>
       </provider>
@@ -875,49 +735,37 @@
           <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
-            <marker date="1669971247866" expanded="true" signature="324:360" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:369" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:382" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:383" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:416" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:418" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="809:916" ph="select * fro... movie" />
-            <marker date="1669971247866" expanded="true" signature="916:918" ph="update movie... " />
-            <marker date="1669971247866" expanded="true" signature="917:918" ph="select * fro... movie" />
-            <marker date="1669971247866" expanded="true" signature="1080:1145" ph="update movie... " />
-            <marker date="1669971247866" expanded="true" signature="1086:1145" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="1313:1382" ph="update movie... " />
-            <marker date="1669971247866" expanded="true" signature="1375:1382" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="1536:1593" ph="select * fro... bugs" />
-            <marker date="1669971247866" expanded="true" signature="1830:1906" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="2333:2402" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="2511:2532" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2538" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2550" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2565" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2573" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2575" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="3063:3084" ph="select * fro... comment" />
-            <marker date="1669971247866" expanded="true" signature="3063:3090" ph="select * fro... comment" />
-            <marker date="1669971247866" expanded="true" signature="3063:3128" ph="select * fro... comment" />
-            <marker date="1669971247866" expanded="true" signature="3277:3314" ph="select * fro... user" />
-            <marker date="1669971247866" expanded="true" signature="3277:3316" ph="select * fro... user" />
-            <marker date="1669971247866" expanded="true" signature="3460:3523" ph="select * fro... feedback" />
-            <marker date="1669971247866" expanded="true" signature="3755:3782" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3788" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3818" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3830" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3831" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3839" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3841" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="4060:4070" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4060:4085" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4060:4091" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4060:4133" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4272:4317" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="4272:4326" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="4272:4328" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="4487:4533" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="324:360" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:369" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:382" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:383" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:416" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:418" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="809:916" ph="select * fro... movie" />
+            <marker date="1670393775983" expanded="true" signature="916:918" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="917:918" ph="select * fro... movie" />
+            <marker date="1670393775983" expanded="true" signature="1080:1145" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="1086:1145" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="1313:1382" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="1375:1382" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="1536:1593" ph="select * fro... bugs" />
+            <marker date="1670393775983" expanded="true" signature="2351:2420" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="2529:2591" ph="update login... " />
+            <marker date="1670393775983" expanded="true" signature="3122:3187" ph="select * fro... comment" />
+            <marker date="1670393775983" expanded="true" signature="3327:3373" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="3649:3710" ph="select * fro... user" />
+            <marker date="1670393775983" expanded="true" signature="3881:3944" ph="update creat... " />
+            <marker date="1670393775983" expanded="true" signature="4116:4183" ph="update creat... " />
+            <marker date="1670393775983" expanded="true" signature="4401:4466" ph="select * fro... feedback" />
+            <marker date="1670393775983" expanded="true" signature="4698:4782" ph="update feedb... " />
+            <marker date="1670393775983" expanded="true" signature="5003:5076" ph="select * fro... film_report" />
+            <marker date="1670393775983" expanded="true" signature="5215:5269" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="5885:5972" ph="select * fro... movie_promo_request" />
+            <marker date="1670393775983" expanded="true" signature="6118:6206" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="6373:6460" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="6785:6896" ph="select * fro... user" />
+            <marker date="1670393775983" expanded="true" signature="7042:7103" ph="select * fro... user" />
+            <marker date="1670393775983" expanded="true" signature="7231:7292" ph="update user " />
           </folding>
         </state>
       </provider>
@@ -956,49 +804,37 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
-            <marker date="1669971247866" expanded="true" signature="324:360" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:369" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:382" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:383" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:416" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:418" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="809:916" ph="select * fro... movie" />
-            <marker date="1669971247866" expanded="true" signature="916:918" ph="update movie... " />
-            <marker date="1669971247866" expanded="true" signature="917:918" ph="select * fro... movie" />
-            <marker date="1669971247866" expanded="true" signature="1080:1145" ph="update movie... " />
-            <marker date="1669971247866" expanded="true" signature="1086:1145" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="1313:1382" ph="update movie... " />
-            <marker date="1669971247866" expanded="true" signature="1375:1382" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="1536:1593" ph="select * fro... bugs" />
-            <marker date="1669971247866" expanded="true" signature="1830:1906" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="2333:2402" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="2511:2532" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2538" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2550" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2565" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2573" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2575" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="3063:3084" ph="select * fro... comment" />
-            <marker date="1669971247866" expanded="true" signature="3063:3090" ph="select * fro... comment" />
-            <marker date="1669971247866" expanded="true" signature="3063:3128" ph="select * fro... comment" />
-            <marker date="1669971247866" expanded="true" signature="3277:3314" ph="select * fro... user" />
-            <marker date="1669971247866" expanded="true" signature="3277:3316" ph="select * fro... user" />
-            <marker date="1669971247866" expanded="true" signature="3460:3523" ph="select * fro... feedback" />
-            <marker date="1669971247866" expanded="true" signature="3755:3782" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3788" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3818" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3830" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3831" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3839" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3841" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="4060:4070" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4060:4085" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4060:4091" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4060:4133" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4272:4317" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="4272:4326" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="4272:4328" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="4487:4533" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="324:360" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:369" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:382" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:383" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:416" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:418" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="809:916" ph="select * fro... movie" />
+            <marker date="1670393775983" expanded="true" signature="916:918" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="917:918" ph="select * fro... movie" />
+            <marker date="1670393775983" expanded="true" signature="1080:1145" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="1086:1145" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="1313:1382" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="1375:1382" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="1536:1593" ph="select * fro... bugs" />
+            <marker date="1670393775983" expanded="true" signature="2351:2420" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="2529:2591" ph="update login... " />
+            <marker date="1670393775983" expanded="true" signature="3122:3187" ph="select * fro... comment" />
+            <marker date="1670393775983" expanded="true" signature="3327:3373" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="3649:3710" ph="select * fro... user" />
+            <marker date="1670393775983" expanded="true" signature="3881:3944" ph="update creat... " />
+            <marker date="1670393775983" expanded="true" signature="4116:4183" ph="update creat... " />
+            <marker date="1670393775983" expanded="true" signature="4401:4466" ph="select * fro... feedback" />
+            <marker date="1670393775983" expanded="true" signature="4698:4782" ph="update feedb... " />
+            <marker date="1670393775983" expanded="true" signature="5003:5076" ph="select * fro... film_report" />
+            <marker date="1670393775983" expanded="true" signature="5215:5269" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="5885:5972" ph="select * fro... movie_promo_request" />
+            <marker date="1670393775983" expanded="true" signature="6118:6206" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="6373:6460" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="6785:6896" ph="select * fro... user" />
+            <marker date="1670393775983" expanded="true" signature="7042:7103" ph="select * fro... user" />
+            <marker date="1670393775983" expanded="true" signature="7231:7292" ph="update user " />
           </folding>
         </state>
       </provider>
@@ -1023,49 +859,37 @@
           <caret line="16" column="70" lean-forward="false" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
-            <marker date="1669971247866" expanded="true" signature="324:360" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:369" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:382" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:383" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:416" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:418" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="809:916" ph="select * fro... movie" />
-            <marker date="1669971247866" expanded="true" signature="916:918" ph="update movie... " />
-            <marker date="1669971247866" expanded="true" signature="917:918" ph="select * fro... movie" />
-            <marker date="1669971247866" expanded="true" signature="1080:1145" ph="update movie... " />
-            <marker date="1669971247866" expanded="true" signature="1086:1145" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="1313:1382" ph="update movie... " />
-            <marker date="1669971247866" expanded="true" signature="1375:1382" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="1536:1593" ph="select * fro... bugs" />
-            <marker date="1669971247866" expanded="true" signature="1830:1906" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="2333:2402" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="2511:2532" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2538" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2550" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2565" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2573" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2575" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="3063:3084" ph="select * fro... comment" />
-            <marker date="1669971247866" expanded="true" signature="3063:3090" ph="select * fro... comment" />
-            <marker date="1669971247866" expanded="true" signature="3063:3128" ph="select * fro... comment" />
-            <marker date="1669971247866" expanded="true" signature="3277:3314" ph="select * fro... user" />
-            <marker date="1669971247866" expanded="true" signature="3277:3316" ph="select * fro... user" />
-            <marker date="1669971247866" expanded="true" signature="3460:3523" ph="select * fro... feedback" />
-            <marker date="1669971247866" expanded="true" signature="3755:3782" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3788" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3818" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3830" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3831" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3839" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3841" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="4060:4070" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4060:4085" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4060:4091" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4060:4133" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4272:4317" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="4272:4326" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="4272:4328" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="4487:4533" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="324:360" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:369" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:382" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:383" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:416" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:418" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="809:916" ph="select * fro... movie" />
+            <marker date="1670393775983" expanded="true" signature="916:918" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="917:918" ph="select * fro... movie" />
+            <marker date="1670393775983" expanded="true" signature="1080:1145" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="1086:1145" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="1313:1382" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="1375:1382" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="1536:1593" ph="select * fro... bugs" />
+            <marker date="1670393775983" expanded="true" signature="2351:2420" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="2529:2591" ph="update login... " />
+            <marker date="1670393775983" expanded="true" signature="3122:3187" ph="select * fro... comment" />
+            <marker date="1670393775983" expanded="true" signature="3327:3373" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="3649:3710" ph="select * fro... user" />
+            <marker date="1670393775983" expanded="true" signature="3881:3944" ph="update creat... " />
+            <marker date="1670393775983" expanded="true" signature="4116:4183" ph="update creat... " />
+            <marker date="1670393775983" expanded="true" signature="4401:4466" ph="select * fro... feedback" />
+            <marker date="1670393775983" expanded="true" signature="4698:4782" ph="update feedb... " />
+            <marker date="1670393775983" expanded="true" signature="5003:5076" ph="select * fro... film_report" />
+            <marker date="1670393775983" expanded="true" signature="5215:5269" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="5885:5972" ph="select * fro... movie_promo_request" />
+            <marker date="1670393775983" expanded="true" signature="6118:6206" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="6373:6460" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="6785:6896" ph="select * fro... user" />
+            <marker date="1670393775983" expanded="true" signature="7042:7103" ph="select * fro... user" />
+            <marker date="1670393775983" expanded="true" signature="7231:7292" ph="update user " />
           </folding>
         </state>
       </provider>
@@ -1128,13 +952,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin_login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="45" lean-forward="false" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/admin/Feedback.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -1175,7 +992,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="7" lean-forward="false" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1183,70 +999,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="32" column="48" lean-forward="false" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pixious.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-            <marker date="1669971247866" expanded="true" signature="324:360" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:369" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:382" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:383" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:416" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="324:418" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="809:916" ph="select * fro... movie" />
-            <marker date="1669971247866" expanded="true" signature="916:918" ph="update movie... " />
-            <marker date="1669971247866" expanded="true" signature="917:918" ph="select * fro... movie" />
-            <marker date="1669971247866" expanded="true" signature="1080:1145" ph="update movie... " />
-            <marker date="1669971247866" expanded="true" signature="1086:1145" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="1313:1382" ph="update movie... " />
-            <marker date="1669971247866" expanded="true" signature="1375:1382" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="1536:1593" ph="select * fro... bugs" />
-            <marker date="1669971247866" expanded="true" signature="1830:1906" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="2333:2402" ph="select * fro... login" />
-            <marker date="1669971247866" expanded="true" signature="2511:2532" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2538" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2550" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2565" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2573" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="2511:2575" ph="update login... " />
-            <marker date="1669971247866" expanded="true" signature="3063:3084" ph="select * fro... comment" />
-            <marker date="1669971247866" expanded="true" signature="3063:3090" ph="select * fro... comment" />
-            <marker date="1669971247866" expanded="true" signature="3063:3128" ph="select * fro... comment" />
-            <marker date="1669971247866" expanded="true" signature="3277:3314" ph="select * fro... user" />
-            <marker date="1669971247866" expanded="true" signature="3277:3316" ph="select * fro... user" />
-            <marker date="1669971247866" expanded="true" signature="3460:3523" ph="select * fro... feedback" />
-            <marker date="1669971247866" expanded="true" signature="3755:3782" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3788" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3818" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3830" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3831" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3839" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="3755:3841" ph="update feedb... " />
-            <marker date="1669971247866" expanded="true" signature="4060:4070" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4060:4085" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4060:4091" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4060:4133" ph="select * fro... film_report" />
-            <marker date="1669971247866" expanded="true" signature="4272:4317" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="4272:4326" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="4272:4328" ph="delete from " />
-            <marker date="1669971247866" expanded="true" signature="4487:4533" ph="delete from " />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/admin/Approve movies.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="39" column="3" lean-forward="true" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="16" />
-          <folding>
-            <marker date="1669968108799" expanded="false" signature="810:816" ph=" " />
-          </folding>
+        <state relative-caret-position="663">
+          <caret line="39" column="3" lean-forward="false" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1254,7 +1013,78 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/view user and creator.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="15" column="44" lean-forward="false" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin_login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="45" lean-forward="false" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="45" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/creator/Add movie promo request.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python39/Lib/site-packages/flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="1357" column="0" lean-forward="false" selection-start-line="1357" selection-start-column="0" selection-end-line="1357" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pixious.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="202" column="36" lean-forward="false" selection-start-line="202" selection-start-column="36" selection-end-line="202" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+            <marker date="1670393775983" expanded="true" signature="324:360" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:369" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:382" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:383" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:416" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="324:418" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="809:916" ph="select * fro... movie" />
+            <marker date="1670393775983" expanded="true" signature="916:918" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="917:918" ph="select * fro... movie" />
+            <marker date="1670393775983" expanded="true" signature="1080:1145" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="1086:1145" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="1313:1382" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="1375:1382" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="1536:1593" ph="select * fro... bugs" />
+            <marker date="1670393775983" expanded="true" signature="2351:2420" ph="select * fro... login" />
+            <marker date="1670393775983" expanded="true" signature="2529:2591" ph="update login... " />
+            <marker date="1670393775983" expanded="true" signature="3122:3187" ph="select * fro... comment" />
+            <marker date="1670393775983" expanded="true" signature="3327:3373" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="3649:3710" ph="select * fro... user" />
+            <marker date="1670393775983" expanded="true" signature="3881:3944" ph="update creat... " />
+            <marker date="1670393775983" expanded="true" signature="4116:4183" ph="update creat... " />
+            <marker date="1670393775983" expanded="true" signature="4401:4466" ph="select * fro... feedback" />
+            <marker date="1670393775983" expanded="true" signature="4698:4782" ph="update feedb... " />
+            <marker date="1670393775983" expanded="true" signature="5003:5076" ph="select * fro... film_report" />
+            <marker date="1670393775983" expanded="true" signature="5215:5269" ph="delete from " />
+            <marker date="1670393775983" expanded="true" signature="5885:5972" ph="select * fro... movie_promo_request" />
+            <marker date="1670393775983" expanded="true" signature="6118:6206" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="6373:6460" ph="update movie... " />
+            <marker date="1670393775983" expanded="true" signature="6785:6896" ph="select * fro... user" />
+            <marker date="1670393775983" expanded="true" signature="7042:7103" ph="select * fro... user" />
+            <marker date="1670393775983" expanded="true" signature="7231:7292" ph="update user " />
+          </folding>
         </state>
       </provider>
     </entry>

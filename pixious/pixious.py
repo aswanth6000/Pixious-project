@@ -194,6 +194,13 @@ def user_block(uid):
     return '''<script>alert("blocked");window.location="/view"</script>'''
 
 
+# ======================================================================================================================================
+#                                                      CREATOR MODULE
+# =====================================================================================================================================
+
+@app.route('/addmovpromoreq')
+def addmovpromo():
+    return render_template('creator/Add movie promo request.html')
 
 
 
