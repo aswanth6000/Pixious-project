@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Add movie</title>
+</head>
+
+<body>
+<table width="200" border="1">
+  <tr>
+    <th scope="row"><label>Movie</label>&nbsp;</th>
+    <td><form id="form2" name="form2" enctype="multipart/form-data" method="post" action="">
+      <label for="file"></label>
+      <input type="file" name="file" id="file" />
+    </form></td>
+  </tr>
+  <tr>
+    <th scope="row"><label>Movie name</label>&nbsp;</th>
+    <td><form id="form3" name="form3" method="post" action="">
+      <label for="movie name"></label>
+      <input type="text" name="movie name" id="movie name" />
+    </form></td>
+  </tr>
+  <tr>
+    <th height="27" scope="row"><label>Description</label>&nbsp;</th>
+    <td><form id="form4" name="form4" method="post" action="">
+      <label for="description"></label>
+      <textarea name="description" id="description" cols="45" rows="5"></textarea>
+    </form></td>
+  </tr>
+  <tr>
+    <th scope="row"><label>Director name</label>&nbsp;</th>
+    <td><form id="form5" name="form5" method="post" action="">
+      <label for="director_name"></label>
+      <input type="text" name="director_name" id="director_name" />
+    </form></td>
+  </tr>
+  <tr>
+    <th colspan="2" scope="row"><form id="form1" name="form1" method="post" action="">
+      <input type="submit" name="add" id="add" value="Add" />
+    </form></th>
+  </tr>
+</table>
+
+</body>
+</html>
