@@ -202,6 +202,35 @@ def user_block(uid):
 def addmovpromo():
     return render_template('creator/Add movie promo request.html')
 
+@app.route('/viewrating')
+def viewrating():
+    return render_template('creator/view rating.html')
+
+@app.route('/viewplaylist')
+def viewplaylist():
+    return render_template('creator/view playlist.html')
+
+@app.route('/viewotherscreatorview')
+def viewotherscreatorview():
+    return render_template('creator/view others creator view.html')
+
+@app.route('/viewothercreator')
+def viewothercreator():
+    return render_template('creator/view other creators.html')
+
+@app.route('/viewmovie')
+def viewpmovie():
+    return render_template('creator/view movie.html')
+
+@app.route('/viewmoviereqvideo')
+def viewmoviereqvideo():
+    return render_template('creator/view movie req video.html')
+
+@app.route('/viewhiringandapply')
+def viewhiringandapply():
+    return render_template('creator/view hiring and apply.html')
+
+
 
 
 
