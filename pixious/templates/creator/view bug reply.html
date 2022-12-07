@@ -16,14 +16,16 @@
     <th scope="col">Reply</th>
     
   </tr>
+    {% for i in data %}
   <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td>&nbsp;{{ loop.index }}</td>
+    <td>&nbsp;{{ i.date }}</td>
+    <td>&nbsp;{{ i.heading }}</td>
+    <td>{{ i.description }}&nbsp;</td>
+    <td>{{ i.reply_date }}&nbsp;</td>
+    <td>{{ i.reply }}&nbsp;</td>
   </tr>
+    {% endfor %}
 </table>
 
 </body>

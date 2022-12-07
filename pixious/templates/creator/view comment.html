@@ -26,13 +26,16 @@
     <td>&nbsp;</td>
     <td>&nbsp;</td>
   </tr>
+    {% for i in data %}
   <tr>
     <th scope="row">&nbsp;</th>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td>&nbsp;{{ loop.index }}</td>
+    <td>{{ i.name }}&nbsp;</td>
+    <td>{{ i.comment }}</td>
     <td><a href="#">Reply</a>&nbsp;</td>
-    <td><a href"#">Report</a>&nbsp;</td>
+    <td><a href="#">Report</a>&nbsp;</td>
   </tr>
+    {% endfor %}
 </table>
 
 </body>
