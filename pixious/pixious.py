@@ -174,11 +174,20 @@ def promo_rej(uid):
 
 #------------------view users------------------
 
-@app.route('/view')
+@app.route('/view',methods=['get','post'])
 def view():
-    db = Db()
-    p = db.select("select * from user,creator ")
-    return render_template('admin/view user and creator.html',data=p)
+    if request.method=="POST":
+        s=request.form['select']
+        n=request.form['t']
+        db = Db()
+        p = db.select("select * from user,creator where creator.user_id=user.user_id  and creator.status='"+s+"' and user.name='"+n+"' ")
+        return render_template('admin/view user and creator.html',data=p)
+
+    else:
+        db=Db()
+        db = Db()
+        p = db.select("select * from user,creator where creator.user_id=user.user_id ")
+        return render_template('admin/view user and creator.html',data=p)
 def user_block(uid):
     db = Db()
     db.update("update user set user_status='blocked' where user_id='"+uid+"'")
