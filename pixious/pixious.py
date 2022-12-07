@@ -1,7 +1,9 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect,session
+import datetime
 from DBConnection import Db
 
 app = Flask(__name__)
+app.secret_key="abc"
 
 
 @app.route('/',methods=['get','post'])
@@ -10,9 +12,15 @@ def login():
         name=request.form['admin_name']
         password=request.form['admin_password']
         db=Db()
-        q=db.selectOne("select * from login where username='"+name+"'and password='"+password+"'and usertype='admin'")
+        q=db.selectOne("select * from login where username='"+name+"'and password='"+password+"'")
         if q is not None:
-           return redirect('/adminhome')
+            if q['usertype']=='admin':
+                return redirect('/adminhome')
+            elif q['usertype']=='user':
+                session['lid']=q['login_id']
+                return redirect('/creatorhome')
+            else:
+                return "<script>alert('user not found');window.location='/'</script>"
         else:
             return "<script>alert('user not found');window.location='/'</script>"
     return render_template('admin_login.html')
@@ -198,37 +206,182 @@ def user_block(uid):
 #                                                      CREATOR MODULE
 # =====================================================================================================================================
 
-@app.route('/addmovpromoreq')
-def addmovpromo():
-    return render_template('creator/Add movie promo request.html')
 
-@app.route('/viewrating')
-def viewrating():
-    return render_template('creator/view rating.html')
+@app.route('/creatorhome')
+def creatorhome():
+    return render_template('creator/creator_home.html')
+
+@app.route('/addmovpromoreq',methods=['get','post'])
+def addmovpromo():
+    if request.method=="POST":
+        moviename=request.form['movie_name']
+        banner=request.form['banner']
+        poster=request.form['poster']
+        date = datetime.datetime.now().strftime("%y%m%d-%H%M%S")
+        banner.save(r"D:\project\Pixious-project\pixious\static\banner\\"+date+'.jpg')
+        banner.save(r"D:\project\Pixious-project\pixious\static\poster\\"+date+'.jpg')
+        db=Db()
+        db.insert("insert into movie_promo_request('','"+date+"','"+moviename+"','"+type+"','pending','"+poster+"','"+banner+"',)")
+        return "ok"
+    else:
+        return render_template('creator/Add movie promo request.html')
+
+
+@app.route('/addmovie',methods=['get','post'])
+def addmovie():
+    if request.method=="POST":
+        movie=request.files['file']
+        moviename=request.form['movie name']
+        description=request.form['description']
+        directorname=request.form['director_name']
+        date=datetime.datetime.now().strftime("%y%m%d-%H%M%S")
+        movie.save(r"D:\project\Pixious-project\pixious\static\movie\\"+date+'.mp4')
+        path="/static/movie/"+date+'.mp4'
+        db=Db()
+        db.insert("insert into movie VALUES ('','"+moviename+"','"+description+"','"+str(session['lid'])+"','"+directorname+"','"+str(path)+"','pending')")
+        return '''<script>alert("uploaded successfully");window.location="/creatorhome"</script>'''
+    else:
+        return render_template('creator/Add movie.html')
+
+
+@app.route('/creatorcomment',methods=['get','post'])
+def creatorcomment():
+    if request.method=="POST":
+        comment=request.form['comment']
+        return "ok"
+    else:
+        return render_template('creator/Comment.html')
+
+@app.route('/hiring')
+def hiring():
+    db = Db()
+    return render_template('creator/Hiring.html.')
+
+
+@app.route('/movieregister')
+def moviereg():
+    db = Db()
+    return render_template('creator/Movie Register.html')
+
+@app.route('/rate',methods=['get','post'])
+def rate():
+    if request.method=="POST":
+        rating=request.form['rating']
+        return "ok"
+    else:
+        return render_template('creator/Rate.html')
+
+@app.route('/sendfeedback')
+def sendfeedback():
+    return render_template('creator/Send feedback.html')
+
+@app.route('/sendreply',methods=['get','post'])
+def creatorreply():
+    if request.method=="POST":
+        reply=request.form['reply']
+        return "ok"
+    else:
+        return render_template('creator/Send reply.html')
+
+@app.route('/creatorbug',methods=['get','post'])
+def creatorbug():
+    if request.method=="POST":
+        heading=request.form['heading']
+        description=request.form['bug_desc']
+        return "ok"
+    else:
+        return render_template('creator/Send bug.html')
+
+@app.route('/creatorshare',methods=['get','post'])
+def creatorshare():
+    if request.method=="POST":
+        username=request.form['user_name']
+        return "ok"
+    else:
+        return render_template('creator/Share.html')
+
+@app.route('/upi')
+def  upi():
+    db = Db()
+    return render_template('creator/UPI.html')
+
+@app.route('/viewapphiring')
+def viewhiring():
+    db=Db()
+    j=db.select("select * from applied_hiring where applied_hiring.hiring_id=hiring.hiring_id and applied_hiring.sender_id='"+str(session['lid'])+"'")
+    return render_template('creator/view applied hiring.html',data=j)
+
+@app.route('/viewbugreply')
+def bugreply():
+    db = Db()
+    i=db.select("select * from bugs where sender_id='"+str(session['lid'])+"'")
+    return render_template('creator/view bug reply.html',data=i)
+
+@app.route('/viewcomment/<mid>')
+def viewcomment(mid):
+    db = Db()
+    h=db.select("select * from comment,user where comment.sender_id=user.user_id and comment.movie_id='"+mid+"'")
+    return render_template('creator/view comment.html',data=h)
+
+@app.route('/viewfeedback')
+def viewfeedback():
+    db = Db()
+    g=db.select("select * from feedback,user where feedback.sender_id=user.user_id")
+    return render_template('creator/view feedback.html',data=g)
+
+@app.route('/viewfollowers')
+def followers():
+    db = Db()
+    f=db.select("select * from followers,user where followers.from_id=user.user_id and followers.to_id='"+str(session['lid'])+"'")
+    return render_template('creator/View followers.html',data=f)
+
+@app.route('/viewrating/<mid>')
+def viewrating(mid):
+    db = Db()
+    e=db.select("select * from rating,user where rating.movie_id='"+mid+"' and rating.user_id=user.user_id")
+    return render_template('creator/view rating.html',data=e)
 
 @app.route('/viewplaylist')
 def viewplaylist():
-    return render_template('creator/view playlist.html')
+    db = Db()
+    d=db.select("select * from playlist,movie where playlist.movie_id=movie.movie_id")
+    return render_template('creator/view playlist.html',data=d)
 
 @app.route('/viewotherscreatorview')
 def viewotherscreatorview():
+    db = Db()
     return render_template('creator/view others creator view.html')
 
 @app.route('/viewothercreator')
 def viewothercreator():
-    return render_template('creator/view other creators.html')
+    db = Db()
+    c=db.select("select * from creator,user where creator.user_id=user.user_id")
+    return render_template('creator/view other creators.html',data=c)
 
 @app.route('/viewmovie')
-def viewpmovie():
-    return render_template('creator/view movie.html')
+def viewmovie():
+    db = Db()
+    b=db.select("select * from movie where creator_id='"+str(session['lid'])+"'")
+    return render_template('creator/view movie.html',data=b)
+
+@app.route('/delete_movie/<fid>')
+def deletemovie(fid):
+    db = Db()
+    db.delete("delete from movie where movie_id='"+fid+"'")
+    return '''<script>alert("deleted");window.location="/viewmovie"</script>'''
+
 
 @app.route('/viewmoviereqvideo')
 def viewmoviereqvideo():
-    return render_template('creator/view movie req video.html')
+    db = Db()
+    a=db.select("select * from movie_promo ")
+    return render_template('creator/view movie req video.html',data=a)
 
 @app.route('/viewhiringandapply')
 def viewhiringandapply():
-    return render_template('creator/view hiring and apply.html')
+    db = Db()
+    qry=db.select("select * from hiring,user where hiring.user_id=user.user_id")
+    return render_template('creator/view hiring and apply.html',data=qry)
 
 
 

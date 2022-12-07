@@ -17,16 +17,19 @@
     <td><label></label>&nbsp;</td>
     <td>&nbsp;</td>
   </tr>
+    {% for i in data %}
   <tr>
     <th scope="row">&nbsp;</th>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td><a href="#">Delete</a>&nbsp;</td>
-    <td><a href="#">View rate</a>
-    <a href="#">View comment</a>&nbsp;</td>
-    <td><a href="#">Add promo request</a><a href="#">View promo request</a>&nbsp;</td>
+    <td>{{ loop.index }}&nbsp;</td>
+    <td>&nbsp;{{ i.movie }}</td>
+    <td>{{ i.movie_name }}&nbsp;</td>
+    <td>{{ i.director_name }}&nbsp;</td>
+    <td>{{ i.description }}</td>
+    <td><a href="/delete_movie/{{ i.movie_id }}">Delete</a>&nbsp;</td>
+    <td><a href="/viewrating/{{ i.movie_id }}">View rate</a>
+    <a href="/viewcommen/{{ i.movie_id }}t">View comment</a>&nbsp;</td>
+    <td><a href="/addmovpromoreq/{{ i.movie_id }}">Add promo request</a>
+        <a href="#">View promo request</a>&nbsp;</td>
   </tr>
 </table>
 

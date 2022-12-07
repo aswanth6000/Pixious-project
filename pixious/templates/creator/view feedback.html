@@ -15,13 +15,15 @@
     <th scope="col">reply date</th>
     <th scope="col">reply</th>
   </tr>
+    {% for i in data %}
   <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td>&nbsp;{{ loop.index }}</td>
+    <td>{{ i.date }}&nbsp;</td>
+    <td>&nbsp;{{ i.feedback }}</td>
+    <td>{{ i.reply_date }}&nbsp;</td>
+    <td>{{ i.reply }}&nbsp;</td>
   </tr>
+    {% endfor %}
 </table>
 </body>
 </html>

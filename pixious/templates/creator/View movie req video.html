@@ -12,11 +12,14 @@
     <td><label>Date</label>&nbsp;</td>
     <td><label>Promo video</label>&nbsp;</td>
   </tr>
+     {% for i in data %}
   <tr>
     <th scope="row">&nbsp;</th>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td>{{ loop.index }}&nbsp;</td>
+    <td>{{ i.date }}&nbsp;</td>
+    <td>{{ i.video }}&nbsp;</td>
   </tr>
+    {% endfor %}
 </table>
 
 </body>

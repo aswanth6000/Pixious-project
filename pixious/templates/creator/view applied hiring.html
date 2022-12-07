@@ -13,12 +13,14 @@
     <th scope="col">Subject</th>
     <th scope="col">Discription</th>
   </tr>
+    {% for i in data %}
   <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td>&nbsp;{{ loop.index }}</td>
+    <td>{{ i.username }}&nbsp;</td>
+    <td>{{ i.subject }}&nbsp;</td>
+    <td>&nbsp;{{ i.description }}</td>
   </tr>
+    {% endfor %}
 </table>
 
 </body>
