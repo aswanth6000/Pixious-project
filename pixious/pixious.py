@@ -192,15 +192,20 @@ def view():
         return render_template('admin/view user and creator.html',data=p)
 
     else:
-        db=Db()
+
         db = Db()
         p = db.select("select * from user,creator where creator.user_id=user.user_id ")
         return render_template('admin/view user and creator.html',data=p)
+@app.route('/user_block/<uid>')
 def user_block(uid):
     db = Db()
     db.update("update user set user_status='blocked' where user_id='"+uid+"'")
     return '''<script>alert("blocked");window.location="/view"</script>'''
-
+@app.route('/user_unblock/<uid>')
+def user_unblock(uid):
+    db = Db()
+    db.update("update user set user_status='active' where user_id='"+uid+"'")
+    return '''<script>alert("un blocked");window.location="/view"</script>'''
 
 # ======================================================================================================================================
 #                                                      CREATOR MODULE
@@ -233,12 +238,14 @@ def addmovie():
         movie=request.files['file']
         moviename=request.form['movie name']
         description=request.form['description']
+        mov_poster=request.form['poster']
+        mov_banner=request.form['banner']
         directorname=request.form['director_name']
         date=datetime.datetime.now().strftime("%y%m%d-%H%M%S")
         movie.save(r"D:\project\Pixious-project\pixious\static\movie\\"+date+'.mp4')
         path="/static/movie/"+date+'.mp4'
         db=Db()
-        db.insert("insert into movie VALUES ('','"+moviename+"','"+description+"','"+str(session['lid'])+"','"+directorname+"','"+str(path)+"','pending')")
+        db.insert("insert into movie VALUES ('','"+moviename+"','"+description+"','"+str(session['lid'])+"','"+mov_poster+"','"+mov_banner+"','"+directorname+"','"+str(path)+"','pending')")
         return '''<script>alert("uploaded successfully");window.location="/creatorhome"</script>'''
     else:
         return render_template('creator/Add movie.html')
@@ -362,7 +369,7 @@ def viewothercreator():
 def viewmovie():
     db = Db()
     b=db.select("select * from movie where creator_id='"+str(session['lid'])+"'")
-    return render_template('creator/view movie.html',data=b)
+    return render_template('creator/View movie.html',data=b)
 
 @app.route('/delete_movie/<fid>')
 def deletemovie(fid):

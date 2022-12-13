@@ -6,41 +6,54 @@
 </head>
 
 <body>
+<form action="" method="POST" action="/addmovie">
 <table width="200" border="1">
   <tr>
     <th scope="row"><label>Movie</label>&nbsp;</th>
-    <td><form id="form2" name="form2" enctype="multipart/form-data" method="post" action="">
+    <td>
       <label for="file"></label>
       <input type="file" name="file" id="file" />
-    </form></td>
+    </td>
   </tr>
   <tr>
     <th scope="row"><label>Movie name</label>&nbsp;</th>
-    <td><form id="form3" name="form3" method="post" action="">
+    <td>
       <label for="movie name"></label>
       <input type="text" name="movie name" id="movie name" />
-    </form></td>
+    </td>
   </tr>
   <tr>
     <th height="27" scope="row"><label>Description</label>&nbsp;</th>
-    <td><form id="form4" name="form4" method="post" action="">
+    <td>
       <label for="description"></label>
       <textarea name="description" id="description" cols="45" rows="5"></textarea>
-    </form></td>
+  </td>
+  </tr>
+      <th height="27" scope="row"><label>banner</label>&nbsp;</th>
+    <td>
+      <label for="banner"></label>
+      <input type="file" name="banner" id="banner" />
+  </td>
+  </tr>
+  <th height="27" scope="row"><label>poster</label>&nbsp;</th>
+    <td>
+      <label for="poster"></label>
+      <input type="file" name="poster" id="poster" />
+  </td>
   </tr>
   <tr>
     <th scope="row"><label>Director name</label>&nbsp;</th>
-    <td><form id="form5" name="form5" method="post" action="">
+    <td>
       <label for="director_name"></label>
       <input type="text" name="director_name" id="director_name" />
-    </form></td>
+    </td>
   </tr>
   <tr>
-    <th colspan="2" scope="row"><form id="form1" name="form1" method="post" action="">
+    <th colspan="2" scope="row">
       <input type="submit" name="add" id="add" value="Add" />
-    </form></th>
+   </th>
   </tr>
 </table>
-
+</form>
 </body>
 </html>

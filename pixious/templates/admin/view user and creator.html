@@ -40,8 +40,11 @@
     <td>{{i.phone}}</td>
      <td>{{i.status}}</td>
      <td>{{i.user_status}}</td>
-
+{% if i.user_status=='active' %}
         <td><a href="/user_block/{{ i.user_id }}"> block</a>
+    {% else %}
+    <td><a href="/user_unblock/{{ i.user_id }}"> unblock</a>
+    {% endif %}
     </tr>
     {% endfor %}
 </table>
