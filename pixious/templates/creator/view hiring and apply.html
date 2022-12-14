@@ -20,10 +20,16 @@
     <td>&nbsp;{{ i.name }}</td>
     <td>&nbsp;{{ i.subject }}</td>
     <td>&nbsp;{{ i.hiring_description }}</td>
-    <td><a href="#">Apply</a></td>
+      {% if i.type=='creator' %}
+           <td>Applied</td>
+
+        {% else %}
+            <td><a href="/hiring_app/{{ i.hiring_id }}">Apply</a></td>
+  {% endif %}
   </tr>
     {% endfor %}
 </table>
+<a href="/hiring">add hirring</a>
 
 </body>
 </html>

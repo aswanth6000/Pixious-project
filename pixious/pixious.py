@@ -151,17 +151,23 @@ def delete(fid):
 
 
 #----------------film promo----------
-@app.route('/promo',methods=['get','post'])
-def promo():
-    if request.method == 'POST':
-        name = request.form['promo_name']
-        description = request.form['promo_desc']
-        poster=request.form['promo_poster']
-        banner=request.form['promo_banner']
-        video=request.form['promo_video']
-        db = Db()
+# @app.route('/promo',methods=['get','post'])
+# def promo():
+#     if request.method == 'POST':
+#         name = request.form['promo_name']
+#         description = request.form['promo_desc']
+#         poster=request.form['promo_poster']
+#         banner=request.form['promo_banner']
+#         video=request.form['promo_video']
+#         db = Db()
+#         db.insert("insert into movie_promo('','"+date+"','"+moviename+"','"+type+"','pending','"+poster+"','"+banner+"',)")
+#
+#
+#     return render_template('admin/Movie Promo.html')
 
-    return render_template('admin/Movie Promo.html')
+
+
+
 #-------promo request---------
 @app.route('/promorequest')
 def promorequest():
@@ -259,43 +265,96 @@ def creatorcomment():
     else:
         return render_template('creator/Comment.html')
 
-@app.route('/hiring')
+@app.route('/addcomment/<mid>', methods=['get', 'post'])
+def addcomment(mid):
+        if request.method == "POST":
+            comment = request.form['comment']
+            db = Db()
+            db.insert("insert into comment VALUES ('','" + comment + "','" + str(session['lid']) + "','"+mid+"',curdate(),'creator','pending','pending')")
+            return '''<script>alert("Rating added");window.location="/viewcrmov"</script>'''
+        else:
+            return render_template('creator/Comment.html')
+
+@app.route('/addcomreply/<mid>', methods=['get', 'post'])
+def addcomreply(mid):
+            if request.method == "POST":
+                comreply = request.form['reply']
+                db = Db()
+                db.update("update comment set reply='"+comreply+"',reply_date=curdate() where comment_id='" + mid + "' ")
+                return '''<script>alert("Reply added");window.location="/viewcrmov"</script>'''
+            else:
+                return render_template('creator/comment reply.html')
+#------------------------------------------------------HIring---------------------------
+
+@app.route('/hiring',methods=['get','post'])
 def hiring():
+
+    if request.method=="POST":
+        subject=request.form['upload_subject']
+        hir_description=request.form['hiring_description']
+        db = Db()
+        db.insert("insert into applied_hiring VALUES ('','"+str(session['lid'])+"','"+hir_description+"','"+subject+"')")
+        return '''<script>alert('Hiring added');window.location="/creatorhome"</script>'''
+    else:
+        return render_template('creator/Hiring.html.')
+
+@app.route('/hiring_app/<uid>')
+def hiring_app(uid):
     db = Db()
-    return render_template('creator/Hiring.html.')
+    db.insert("insert into applied_hiring VALUES ('','" + uid + "','" + str(session['lid']) + "','creator')")
+    return '''<script>alert('Applied');window.location="/viewapphiring"</script>'''
 
+@app.route('/viewapphiring')
+def viewhiring():
+    db=Db()
+    j=db.select("select * from hiring left join applied_hiring on hiring.hiring_id=applied_hiring.hiring_id left join user on hiring.user_id=user.user_id ")
+    return render_template('creator/view hiring and apply.html',data=j)
 
+@app.route('/viewhiringandapply')
+def viewhiringandapply():
+    db = Db()
+    qry=db.select("select * from hiring,user where hiring.user_id=user.user_id")
+    return render_template('creator/view hiring and apply.html',data=qry)
+#--------------------------------------------------------------------------------------------------
 @app.route('/movieregister')
 def moviereg():
     db = Db()
     return render_template('creator/Movie Register.html')
 
-@app.route('/rate',methods=['get','post'])
-def rate():
-    if request.method=="POST":
-        rating=request.form['rating']
-        return "ok"
-    else:
-        return render_template('creator/Rate.html')
+# @app.route('/rate',methods=['get','post'])
+# def rate():
+#     if request.method=="POST":
+#         rating=request.form['rating']
+#         return "ok"
+#     else:
+#         return render_template('creator/Rate.html')
 
-@app.route('/sendfeedback')
+@app.route('/sendfeedback',methods=['get','post'])
 def sendfeedback():
-    return render_template('creator/Send feedback.html')
-
-@app.route('/sendreply',methods=['get','post'])
-def creatorreply():
     if request.method=="POST":
-        reply=request.form['reply']
-        return "ok"
+        feedback=request.form['feedback']
+        db=Db()
+        db.insert("insert into feedback VALUES ('','"+str(session['lid'])+"','"+feedback+"',curdate(),'pending','pending','creator')")
+        return '''<script>alert('Thank you for your feedback');window.location="/creatorhome"</script>'''
     else:
-        return render_template('creator/Send reply.html')
+      return render_template('creator/Send feedback.html')
+
+# @app.route('/sendreply',methods=['get','post'])
+# def creatorreply():
+#     if request.method=="POST":
+#         reply=request.form['reply']
+#         return "ok"
+#     else:
+#         return render_template('creator/Send reply.html')
 
 @app.route('/creatorbug',methods=['get','post'])
 def creatorbug():
     if request.method=="POST":
         heading=request.form['heading']
         description=request.form['bug_desc']
-        return "ok"
+        db = Db()
+        db.insert("insert into bugs VALUES ('','"+str(session['lid'])+"',curdate(),'"+heading+"','"+description+"','creator','pending','pending')")
+        return '''<script>alert('Bug reported');window.location="/creatorhome"</script>'''
     else:
         return render_template('creator/Send bug.html')
 
@@ -312,11 +371,8 @@ def  upi():
     db = Db()
     return render_template('creator/UPI.html')
 
-@app.route('/viewapphiring')
-def viewhiring():
-    db=Db()
-    j=db.select("select * from applied_hiring where applied_hiring.hiring_id=hiring.hiring_id and applied_hiring.sender_id='"+str(session['lid'])+"'")
-    return render_template('creator/view applied hiring.html',data=j)
+
+
 
 @app.route('/viewbugreply')
 def bugreply():
@@ -328,7 +384,13 @@ def bugreply():
 def viewcomment(mid):
     db = Db()
     h=db.select("select * from comment,user where comment.sender_id=user.user_id and comment.movie_id='"+mid+"'")
-    return render_template('creator/view comment.html',data=h)
+    return render_template('creator/view comment.html',data=h,m=mid)
+
+@app.route('/rep_comment/<fid>')
+def rep_comment(fid):
+    db = Db()
+    db.insert("insert into report VALUES ('','" + str(session['lid']) + "','"+fid+"','creator','comment')")
+    return '''<script>alert("reported");window.location="/viewmovie"</script>'''
 
 @app.route('/viewfeedback')
 def viewfeedback():
@@ -342,11 +404,52 @@ def followers():
     f=db.select("select * from followers,user where followers.from_id=user.user_id and followers.to_id='"+str(session['lid'])+"'")
     return render_template('creator/View followers.html',data=f)
 
+@app.route('/follow/<uid>')
+def follow(uid):
+    db = Db()
+    qry=db.selectOne("select * from followers where to_id='"+uid+"' and from_id='"+str(session['lid'])+"' and status='unfollowed'")
+    if qry is not None:
+        db.update("update followers set status='followed' where to_id='" + uid + "'")
+        return redirect('/viewothercreator')
+
+    else:
+        db.insert("insert into followers VALUES ('','" + str(session['lid']) + "','creator','"+uid+"',curdate(),'followed')")
+        return redirect('/viewothercreator')
+
+@app.route('/unfollow/<uid>')
+def unfollow(uid):
+    db = Db()
+    db.update("update followers set status='unfollowed' where to_id='" + uid + "'")
+    return redirect('/viewothercreator')
+
+@app.route('/viewcrmov')
+def viewcrmov():
+    db = Db()
+    d=db.select("select * from creator,movie where movie.creator_id=creator.creator_id")
+    return render_template('creator/view creator movie.html', data=d)
+
 @app.route('/viewrating/<mid>')
 def viewrating(mid):
     db = Db()
-    e=db.select("select * from rating,user where rating.movie_id='"+mid+"' and rating.user_id=user.user_id")
-    return render_template('creator/view rating.html',data=e)
+    e=db.select("select * from rating,user where rating.movie_id='"+mid+"' and rating.sender_id=user.user_id")
+    return render_template('creator/view rating.html',data=e,m=mid)
+
+@app.route('/addrating/<mid>',methods=['get','post'])
+def addrating(mid):
+    if request.method=="POST":
+        rating=request.form['rating']
+        db = Db()
+        db.insert("insert into rating VALUES ('','"+rating+"','pending','"+mid+"','" + str(session['lid']) + "','creator',curdate())")
+        return '''<script>alert("Rating added");window.location="/viewcrmov"</script>'''
+    else:
+        return render_template('creator/add rating.html')
+
+@app.route('/addtoplaylist/<mid>')
+def addtoplaylist(mid):
+    db = Db()
+    db.insert("insert into playlist VALUES ('','"+mid+"','" + str(session['lid']) + "','creator')")
+    return '''<script>alert("Rating added");window.location="/viewcrmov"</script>'''
+
 
 @app.route('/viewplaylist')
 def viewplaylist():
@@ -362,7 +465,7 @@ def viewotherscreatorview():
 @app.route('/viewothercreator')
 def viewothercreator():
     db = Db()
-    c=db.select("select * from creator,user where creator.user_id=user.user_id")
+    c=db.select("select * from creator left join user on creator.user_id=user.user_id left join followers on followers.to_id=creator.creator_id ")
     return render_template('creator/view other creators.html',data=c)
 
 @app.route('/viewmovie')
@@ -384,11 +487,9 @@ def viewmoviereqvideo():
     a=db.select("select * from movie_promo ")
     return render_template('creator/view movie req video.html',data=a)
 
-@app.route('/viewhiringandapply')
-def viewhiringandapply():
-    db = Db()
-    qry=db.select("select * from hiring,user where hiring.user_id=user.user_id")
-    return render_template('creator/view hiring and apply.html',data=qry)
+
+
+
 
 
 

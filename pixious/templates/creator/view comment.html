@@ -22,21 +22,25 @@
   <tr>
     <th scope="row"><label>Serial No</label>&nbsp;</th>
     <td><label>creator/user</label>&nbsp;</td>
-    <td><label>Comment</label>&nbsp;</td>
+    <td><label>Comment reply</label>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
+       <td>&nbsp;</td>
   </tr>
     {% for i in data %}
   <tr>
-    <th scope="row">&nbsp;</th>
+
     <td>&nbsp;{{ loop.index }}</td>
     <td>{{ i.name }}&nbsp;</td>
     <td>{{ i.comment }}</td>
-    <td><a href="#">Reply</a>&nbsp;</td>
-    <td><a href="#">Report</a>&nbsp;</td>
+    <td><a href="/addcomreply/{{ i.comment_id }}">Reply</a>&nbsp;</td>
+         <td><a href="/rep_comment/{{ i.user_id }}">Report</a>&nbsp;</td>
+
   </tr>
     {% endfor %}
 </table>
+ <td><a href="/addcomment/{{ m }}">Add comment</a>&nbsp;</td>
+
 
 </body>
 </html>

@@ -14,7 +14,7 @@
     <td><label>Director name</label>&nbsp;</td>
     <td><label>Description</label>&nbsp;</td>
     <td>&nbsp;</td>
-    <td></td>
+
 
   </tr>
     {% for i in data %}
@@ -25,14 +25,15 @@
     <td>{{ i.movie_name }}</td>
     <td>{{ i.director_name }}&nbsp;</td>
     <td>{{ i.description }}</td>
-    <td><a href="/delete_movie/{{ i.movie_id }}">Delete</a>&nbsp;</td>
     <td><a href="/viewrating/{{ i.movie_id }}">View rate</a>
-    <a href="/viewcomment/{{ i.movie_id }}">View comment</a>&nbsp;</td>
+    <a href="/viewcomment/{{ i.movie_id }}">View comment</a>&nbsp;
+        <a href="/addtoplaylist/{{ i.movie_id }}">Add to playlist</a>&nbsp;
+
+    </td>
 {#    <td><a href="/addmovpromoreq/{{ i.movie_id }}">Add promo request</a> <a href="#">View promo request</a>&nbsp;</td>#}
   </tr>
   {% endfor %}
 </table>
-<a href="/addmovie"> Upload movies</a>
 
 </body>
 </html>

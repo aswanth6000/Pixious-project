@@ -22,8 +22,13 @@
     <td>&nbsp;{{ i.photo }}</td>
     <!--<td>{{ i.email }}&nbsp;</td>-->
     <!--<td>{{ i.phone_no }}</td>-->
-    <td><a href="#">Follow</a>&nbsp;</td>
-    <td><a href="#">View Movies</a>&nbsp;</td>
+      {% if i.status == 'followed' %}
+          <td><a href="/unfollow/{{ i.creator_id }}">unfollow</a>&nbsp;</td>
+            {% else %}
+    <td><a href="/follow/{{ i.creator_id }}">Follow</a>&nbsp;</td>
+      {% endif %}
+    <td><a href="viewcrmov">View Movies</a>&nbsp;</td>
+
   </tr>
     {% endfor %}
 </table>
