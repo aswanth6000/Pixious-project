@@ -6,26 +6,28 @@
 </head>
 
 <body>
+<form method="post" action="">
 <table width="200" border="1">
   <tr>
     <th scope="row">Subject</th>
-    <td><form id="form1" name="form1" method="post" action="">
+    <td>
       <label for="upload_subject"></label>
       <input type="text" name="upload_subject" id="upload_subject" />
-    </form></td>
+    </td>
   </tr>
   <tr>
     <th scope="row">Description</th>
-    <td><form id="form2" name="form2" method="post" action="">
+    <td>
       <label for="hiring_description"></label>
       <textarea name="hiring_description" id="hiring_description" cols="45" rows="5"></textarea>
-    </form></td>
+    </td>
   </tr>
   <tr>
-    <th colspan="2" scope="row"><form id="form3" name="form3" method="post" action="">
-      <input type="submit" name="hiring_button" id="hiring_button" value="Upload" />
-    </form></th>
+    <th colspan="2" scope="row">
+      <input type="submit"id="hiring_button" value="Upload" />
+    </th>
   </tr>
 </table>
+    </form>
 </body>
 </html>
