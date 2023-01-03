@@ -8,9 +8,9 @@
 <body><table width="200" border="1">
   <tr>
     <th scope="row">Serial No</th>
-    <td>Movie</td>
-    <td>Movie Name</td>
-    <td>Director Name</td>
+    <th>Movie</th>
+    <th>Movie Name</th>
+    <th>Director Name</th>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -18,15 +18,15 @@
   </tr>
     {% for i in data %}
   <tr>
-    <th scope="row">&nbsp;</th>
+
     <td>{{ loop.index }}&nbsp;</td>
     <td>{{ i.movie }}&nbsp;</td>
     <td>{{ i.movie_name }}&nbsp;</td>
     <td>{{ i.director_name }}</td>
-    <td><a href="#">Rate</a>&nbsp;</td>
-    <td><a href="#">Comment</a>&nbsp;</td>
+    <td><a href="/viewrating/{{ i.movie_id }}">Rate</a>&nbsp;</td>
+    <td><a href="/viewcomment/{{ i.movie_id }}">Comment</a>&nbsp;</td>
     <td><a href="#">Share</a>&nbsp;</td>
-    <td><a href="#">Delete</a>&nbsp;</td>
+    <td><a href="/delete_movie_from_playlist/{{i.playlist_id}}">Delete</a>&nbsp;</td>
   </tr>
     {% endfor %}
 </table>
