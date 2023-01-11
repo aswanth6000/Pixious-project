@@ -444,13 +444,11 @@ def addrating(mid):
     else:
         return render_template('creator/add rating.html')
 
-
-#-------------------------------------------play list-------------------------------
 @app.route('/addtoplaylist/<mid>')
 def addtoplaylist(mid):
     db = Db()
     db.insert("insert into playlist VALUES ('','"+mid+"','" + str(session['lid']) + "','creator')")
-    return '''<script>alert("Added to playlist");window.location="/viewcrmov"</script>'''
+    return '''<script>alert("Rating added");window.location="/viewcrmov"</script>'''
 
 
 @app.route('/viewplaylist')
@@ -459,13 +457,6 @@ def viewplaylist():
     d=db.select("select * from playlist,movie where playlist.movie_id=movie.movie_id")
     return render_template('creator/view playlist.html',data=d)
 
-@app.route('/delete_movie_from_playlist/<fid>')
-def delete_movie_from_playlist(fid):
-    db = Db()
-    db.delete("delete from playlist where movie_id='"+fid+"'")
-    return '''<script>alert("Removed from play list");window.location="/viewplaylist"</script>'''
-
-#----------------------------------------------------------------------
 @app.route('/viewotherscreatorview')
 def viewotherscreatorview():
     db = Db()
